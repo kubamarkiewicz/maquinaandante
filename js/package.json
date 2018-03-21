@@ -1,0 +1,14 @@
+{
+  "name": "my-awesome-package",
+  "description": "my-awesome-package",
+  "repository": "my-awesome-package",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-route": "^1.6.9",
+    "angular-sanitize": "^1.6.9",
+    "angular-translate": "^2.17.0",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1"
+  }
+}

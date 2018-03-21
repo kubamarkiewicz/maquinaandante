@@ -1,0 +1,46 @@
+section#team {
+    background-color: #ffffff;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 50px;
+}
+section#team .portrait {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    /* margin: 50px; */
+    width: 300px;
+    border-radius: 50%;
+    text-align: left;
+    display: inline-block;
+}
+section#team .portrait .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    mix-blend-mode: overlay;
+    z-index: 10;
+    /* border-radius: 50%; */
+}
+
+section#team .portrait video {
+    position: absolute;
+    filter: grayscale(100%) blur(3px);
+    opacity: 0.45;
+    z-index: 9;
+    /* width: 100%; */
+    height: 100%;
+    margin-left: -18%;
+}
+
+/* mobile */
+@media screen and (max-width: 991px) {
+
+
+
+
+}

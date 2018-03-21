@@ -1,0 +1,49 @@
+
+section#home {
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	position: relative;
+}
+section#home video {
+	width: 100%;
+	height: 100%;
+}
+
+section#home main {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+}
+section#home main a {
+	position: absolute;
+	opacity: 0;
+}
+section#home main a.show {
+	animation-name: section-home-links-animation;
+	animation-duration: 1s;
+	animation-delay: 12s;
+	animation-fill-mode: forwards;
+}
+section#home main a.andrea {
+	left: 54%;top: 10%;
+	animation-delay: 11s;
+}
+section#home main a.aseneth {
+	left: 20%;top: 20%;
+	animation-delay: 11.5s;
+}
+
+@keyframes section-home-links-animation {
+    0%   {opacity: 0}
+    100% {opacity: 1}
+}
+
+/* mobile */
+@media screen and (max-width: 991px) {
+
+
+
+
+}

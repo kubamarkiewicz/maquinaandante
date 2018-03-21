@@ -1,0 +1,207 @@
+
+/************************************************
+Bootstrap 4 Responsive breakpoints
+
+ sm - Small devices			>= 576px
+ md - Medium devices		>= 768px
+ lg - Large devices			>= 992px
+ xl - Extra large devices	>= 1200px
+
+************************************************/
+
+
+/***********************************************/
+/* Fonts                                       */
+/***********************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400,700|Arimo:400,700');
+
+/***********************************************/
+/* General styles                              */
+/***********************************************/
+html, body {
+	height: 100%;
+}
+html {
+	font-size: 14px;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	color: #ffffff;
+	background-color: #000000;
+	font-family: 'Arimo', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+strong {
+	/*font-weight: 800;*/
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+	transition: all 0.1s ease;
+}
+ /* on hover, select */
+a:hover { 
+	color: #ffffff;
+	text-decoration: none;
+	/*opacity: 0.8;*/
+}
+a:focus { 
+	/*opacity: 0.8;*/
+}
+/* on press */
+a:active {  
+	color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	/*letter-spacing: 0.1em;*/
+	margin-bottom: 1.2rem;
+}
+h2 {
+	font-weight: 400;
+}
+h3 {
+	font-weight: 400;
+}
+h4 {
+	font-weight: 400;
+}
+h5 {
+	font-weight: 400;
+}
+h1.alternate, h2.alternate, h3.alternate, h4.alternate, h5.alternate, h6.alternate {
+	font-family: 'Arimo', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+}
+hr {
+}
+img {
+	max-width: 100%;
+}
+
+
+/* loading */
+body.loading p,
+body.loading a,
+body.loading span,
+body.loading h1,
+body.loading h2,
+body.loading h3,
+body.loading h4,
+body.loading h5,
+body.loading > footer {
+	visibility: hidden;
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 991px) {
+
+}
+
+/***********************************************/
+/* Layout divs                                 */
+/***********************************************/
+
+#frame {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(../images/bars.png);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+@media screen and (min-aspect-ratio: 16/9) { 
+	#frame {
+		height: 100vh;
+		width: 177.77vh;
+	}
+}
+
+#frame > main {
+	height: 100%;
+	position: relative;
+}
+
+#frame > nav {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 100;
+	opacity: 0;
+	animation-name: menu-animation;
+	animation-duration: 1s;
+	animation-delay: 18s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes menu-animation {
+    0%   {opacity: 0}
+    100% {opacity: 1}
+}
+
+
+
+/***********************************************/
+/* Overwritten Bootstrap Styles                */
+/***********************************************/
+
+.btn {
+	font-family: 'Oswald', sans-serif;
+	/*letter-spacing: 0.1em;*/
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}
+.btn .icon {
+    position: relative;
+    transition: transform 0.5s;
+    display: inline-block;
+    margin-right: 6px;
+}
+.btn:hover .icon {
+    transform: translateX(0.3em);
+}
+
+
+.btn.circle {
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn.circle .text {
+	
+}
+
+
+
+
+/***********************************************/
+/* Forms                                       */
+/***********************************************/
+
+
+/***********************************************/
+/* Components	               		           */
+/***********************************************/
+
+
+@media screen and (max-width: 991px) {
+
+	
+
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>MAQUINA ANDANTE</title>
+    <meta name="description" content="">
+    <base href="/2018/maquina_andante/www/">
+    <!-- <base href="/"> -->
+
+    <!-- Le styles -->
+    <link href="js/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- pages -->
+    <link href="js/pages/home/home.css" rel="stylesheet">
+    <link href="js/pages/works/works.css" rel="stylesheet">
+    <link href="js/pages/team/team.css" rel="stylesheet">
+
+	<link rel="icon" href="images/favicon.png">
+</head>
+<body class="loading page-home" ng-app="myApp">
+
+    <div id="frame">
+
+        <nav><a href="index.html"><img src="images/menu.png" alt=""></a></nav>
+        
+        <main ng-view></main>
+
+    </div>
+
+
+	<!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/node_modules/angular/angular.min.js"></script>
+    <script src="js/node_modules/angular-route/angular-route.min.js"></script>
+    <script src="js/node_modules/angular-translate/dist/angular-translate.min.js"></script>
+    <script src="js/node_modules/angular-translate/dist/angular-translate-loader-url/angular-translate-loader-url.min.js"></script>
+    <script src="js/node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+
+    <!-- Angular Application -->
+    <script src="js/config/config.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Pages Controllers -->
+    <script src="js/pages/home/home-controller.js"></script>
+    <script src="js/pages/works/works-controller.js"></script>
+    <script src="js/pages/team/team-controller.js"></script>
+
+    <!-- Services -->
+
+    <!-- Other libraries -->
+
+</body>
+</html>
