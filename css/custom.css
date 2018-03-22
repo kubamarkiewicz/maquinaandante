@@ -136,11 +136,11 @@ body.loading > footer {
 	top: 10px;
 	left: 10px;
 	z-index: 100;
-	opacity: 0;
+/*	opacity: 0;
 	animation-name: menu-animation;
 	animation-duration: 1s;
 	animation-delay: 18s;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards;*/
 }
 
 
@@ -154,6 +154,11 @@ body.loading > footer {
 /***********************************************/
 /* Overwritten Bootstrap Styles                */
 /***********************************************/
+
+.container {
+	width: 100%;
+}
+
 
 .btn {
 	font-family: 'Oswald', sans-serif;

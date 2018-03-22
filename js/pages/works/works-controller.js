@@ -1,6 +1,5 @@
 app.controller('WorksController', function($scope, $rootScope, $http, $routeParams, config) {  
 
-
 	$scope.playlistIndex = 0;
 
     // load works data

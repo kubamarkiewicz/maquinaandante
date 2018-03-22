@@ -85,19 +85,19 @@ app.config(function ($routeProvider, $locationProvider) {
         .when('/', { 
             controller: 'HomeController', 
             templateUrl: 'js/pages/home/index.html' 
+        })  
+        .when('/team/:person', { 
+            // controller: 'TeamController', 
+            templateUrl: 'js/pages/team/ase.html' 
         }) 
         .when('/works', { 
             controller: 'WorksController', 
             templateUrl: 'js/pages/works/index.html' 
-        }) 
-        .when('/team', { 
-            // controller: 'TeamController', 
-            templateUrl: 'js/pages/team/index.html' 
-        }) 
-        .when('/team/ase', { 
-            // controller: 'TeamController', 
-            templateUrl: 'js/pages/team/ase.html' 
-        }) 
+        })
+        .when('/works/:work', { 
+            controller: 'WorkController', 
+            templateUrl: 'js/pages/work/index.html' 
+        })
         .otherwise({ 
             redirectTo: '/' 
         }); 

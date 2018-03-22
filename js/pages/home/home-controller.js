@@ -34,6 +34,15 @@ app.controller('HomeController', function($scope, $rootScope, $http, $routeParam
     }
 
 
-    playIntro();
+    // play intro
+    if (!window.sessionStorage.seenIntro) { 
+        playIntro();
+        window.sessionStorage.seenIntro = 1;
+    } 
+    // skip intro
+    else { 
+        playAbout();
+    }
+    
 
 });
