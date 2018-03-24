@@ -1,5 +1,6 @@
 app.controller('TeamController', function($scope, $rootScope, $http, $routeParams, config) {  
 
+    console.log('TeamController');
 
 /*    $scope.videoPlayer = document.getElementById("video-player");
     $scope.videoSource = document.getElementById("video-source");

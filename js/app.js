@@ -87,16 +87,16 @@ app.config(function ($routeProvider, $locationProvider) {
             templateUrl: 'js/pages/home/index.html' 
         })  
         .when('/team/:person', { 
-            // controller: 'TeamController', 
+            controller: 'TeamController', 
             templateUrl: 'js/pages/team/ase.html' 
         }) 
-        .when('/works', { 
-            controller: 'WorksController', 
-            templateUrl: 'js/pages/works/index.html' 
-        })
         .when('/works/:work', { 
             controller: 'WorkController', 
             templateUrl: 'js/pages/work/index.html' 
+        })
+        .when('/works', { 
+            controller: 'WorksController', 
+            templateUrl: 'js/pages/works/index.html' 
         })
         .otherwise({ 
             redirectTo: '/' 

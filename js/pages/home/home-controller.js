@@ -4,7 +4,7 @@ app.controller('HomeController', function($scope, $rootScope, $http, $routeParam
 
     function loadVideo(src)
     {
-        $(video).attr('src', src);
+        $(video).find('source').attr('src', src);
         video.load();
     }
 

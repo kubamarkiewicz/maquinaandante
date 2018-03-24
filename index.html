@@ -26,7 +26,18 @@
 
     <div id="frame">
 
-        <nav><a href="index.html"><img src="images/menu.png" alt=""></a></nav>
+        <nav>
+            <div class="pages">
+                <a 
+                    href="index.html" 
+                    class="{{ pageSlug=='home' || pageSlug=='team' ? 'selected' : '' }}">QUIEN SOMOS</a>
+                <a 
+                    href="works"
+                    class="{{ pageSlug=='works' ? 'selected' : '' }}"
+                    >OUR WORKS</a>
+            </div>
+            <a href="index.html"><img src="images/menu.png" alt=""></a>
+        </nav>
         
         <main ng-view></main>
 

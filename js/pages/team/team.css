@@ -1,21 +1,40 @@
-section#team {
-    background-color: #ffffff;
-    height: 100vh;
-    overflow: hidden;
-    text-align: center;
-    padding-top: 50px;
+body.page-team {
+    color: #4f4e51;
 }
-section#team .portrait {
-    height: 300px;
+body.page-team a {
+    color: #4f4e51;
+}
+body.page-team a img {
+    filter: invert(100%);
+}
+
+
+
+section#person {
+    background-color: #000000;
+    height: 100%;
+    overflow: hidden;
+}
+section#person > main {
+    background-color: #ffffff;
+    height: 100%;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+section#person .portrait {
+    height: 13vw;
     position: relative;
     overflow: hidden;
     /* margin: 50px; */
-    width: 300px;
+    width: 13vw;
     border-radius: 50%;
     text-align: left;
     display: inline-block;
 }
-section#team .portrait .image {
+section#person .portrait .image {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -27,7 +46,7 @@ section#team .portrait .image {
     /* border-radius: 50%; */
 }
 
-section#team .portrait video {
+section#person .portrait video {
     position: absolute;
     filter: grayscale(100%) blur(3px);
     opacity: 0.45;

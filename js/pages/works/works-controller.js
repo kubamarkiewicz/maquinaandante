@@ -1,5 +1,7 @@
 app.controller('WorksController', function($scope, $rootScope, $http, $routeParams, config) {  
 
+    console.log('WorksController');
+    
 	$scope.playlistIndex = 0;
 
     // load works data
@@ -48,12 +50,12 @@ app.controller('WorksController', function($scope, $rootScope, $http, $routePara
         // play video from playlist
         else {
             $scope.playlistIndex++;
-            $scope.$apply();
             if ($scope.playlistIndex >= $scope.worksData.length) {
                 $scope.playlistIndex = 0;
             }
             playlistPlay($scope.playlistIndex);
-            toggleSeparator = true;        
+            toggleSeparator = true; 
+            $scope.$apply();     
         }
     }
 

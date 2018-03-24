@@ -28,6 +28,9 @@ section#works .info {
 	height: 100%;
 	background-color: rgba(0,0,0,0.8);
 }
+section#works .info h1 {
+	margin-bottom: 0.4rem;
+}
 section#works .info.show {
 	animation-name: section-works-info-animation;
 	animation-duration: 1s;
