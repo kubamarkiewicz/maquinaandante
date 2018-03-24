@@ -27,12 +27,13 @@ section#home main a.show {
 	animation-fill-mode: forwards;
 }
 section#home main a.andrea {
-	left: 54%;top: 10%;
-	animation-delay: 11s;
+	left: 54%;
+	top: 10%;
+	animation-delay: 20.5s;
 }
 section#home main a.aseneth {
 	left: 20%;top: 20%;
-	animation-delay: 11.5s;
+	animation-delay: 21s;
 }
 
 @keyframes section-home-links-animation {

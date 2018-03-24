@@ -24,8 +24,8 @@ app.controller('HomeController', function($scope, $rootScope, $http, $routeParam
     {
     	playVideo('videos/about.mp4');
         $('section#home main a').addClass('show');
-        $('#frame > nav').addClass('show');
     	video.onended = goToWorks;
+        $('body').removeClass('intro');
     }
 
     function goToWorks()
@@ -38,6 +38,7 @@ app.controller('HomeController', function($scope, $rootScope, $http, $routeParam
     if (!window.sessionStorage.seenIntro) { 
         playIntro();
         window.sessionStorage.seenIntro = 1;
+        $('body').addClass('intro');
     } 
     // skip intro
     else { 

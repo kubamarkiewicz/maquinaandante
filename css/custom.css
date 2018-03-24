@@ -105,7 +105,8 @@ body.loading h2,
 body.loading h3,
 body.loading h4,
 body.loading h5,
-body.loading > footer {
+body.loading > footer,
+body.loading #frame > nav {
 	visibility: hidden;
 }
 
@@ -132,47 +133,14 @@ body.loading > footer {
 	#frame {
 		height: 100vh;
 		width: 177.77vh;
+		background-color: #080808;
+		overflow-x: hidden;
 	}
 }
 
 #frame > main {
 	height: 100%;
 	position: relative;
-}
-
-#frame > nav {
-	font-family: 'Oswald', sans-serif;
-	/* font-weight: 200; */
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	z-index: 100;
-	/*	opacity: 0;
-	animation-name: menu-animation;
-	animation-duration: 1s;
-	animation-delay: 18s;
-	animation-fill-mode: forwards;*/
-	height: 100%;
-}
-#frame > nav .pages {
-	font-size: 1.2rem;
-	position: absolute;
-	white-space: nowrap;
-	transform: rotateZ(-90deg) translateY(10%);
-	transform-origin: left top;
-	bottom: 0px;
-}
-#frame > nav .pages a {
-	margin: 0 0.5rem;
-}
-#frame > nav .pages a.selected {
-	font-weight: 600;
-}
-
-
-@keyframes menu-animation {
-    0%   {opacity: 0}
-    100% {opacity: 1}
 }
 
 
@@ -244,6 +212,46 @@ body.loading > footer {
 /***********************************************/
 /* Components	               		           */
 /***********************************************/
+
+#frame > nav {
+	font-family: 'Oswald', sans-serif;
+	/* font-weight: 200; */
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 100;
+	/*	opacity: 0;
+	animation-name: menu-animation;
+	animation-duration: 1s;
+	animation-delay: 18s;
+	animation-fill-mode: forwards;*/
+	height: 100%;
+	transition: all 1s;
+}
+body.intro #frame > nav {
+	transition-duration: 0s;
+	transform: translateX(-150%);
+}
+#frame > nav .pages {
+	font-size: 1.2rem;
+	position: absolute;
+	white-space: nowrap;
+	transform: rotateZ(-90deg) translateY(10%);
+	transform-origin: left top;
+	bottom: 0px;
+}
+#frame > nav .pages a {
+	margin: 0 0.5rem;
+}
+#frame > nav .pages a.selected {
+	font-weight: 600;
+}
+
+
+@keyframes menu-animation {
+    0%   {opacity: 0}
+    100% {opacity: 1}
+}
 
 
 @media screen and (max-width: 991px) {
